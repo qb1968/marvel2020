@@ -1,0 +1,568 @@
+/* 
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: absolte;
+  width: 100%;
+  
+  
+  
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: 937px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(77, 76, 76);
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn :hover {
+  background-color: black;
+  color:white
+}
+
+.search-form,
+.search,
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.search,
+.search-btn {
+  height: 35px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px #aeaec0;
+}
+.search {
+  min-width: 40%;
+  border-radius: 30px 0 0 30px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.search-btn {
+  min-width: 10%;
+  border-radius: 0 30px 30px 0;
+  background-color:rgb(196, 163, 163);
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.search-btn:hover {
+  box-shadow: 1px 1px 10px var(--dark-grey);
+  transition: transform 0.1s, box-shadow 0.4s;
+  font-weight: 700;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.card-wrap {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* -------------- */
+/* - Herocard - */
+/* -------------- */
+
+.hero-card {
+  position: relative;
+}
+.hero,
+.hero-card {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+.hero {
+  margin: 20px;
+}
+.hero-card {
+  box-shadow: 1px 1px 30px #00212d;
+  filter: brightness(1) saturate(90%);
+  transition: transform 0.6s, box-shadow 0.6s, filter 0.4s;
+  box-sizing: border-box;
+}
+.hero-card:hover {
+  box-shadow: 1px 1px 40px white;
+  transform: scale(1.02);
+  filter: brightness(1.2) saturate(110%);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.hero-card p {
+  height: 45px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 8px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  line-height: 17px;
+  text-overflow: ellipsis;
+  position: relative;
+  top: 165px;
+}
+.Card__gradient-overlay {
+  height: 300px;
+  background: linear-gradient(
+    rgba(180, 180, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.8) 55%,
+    rgb(236, 236, 231) 60%
+  );
+  border-radius: 10px;
+}
+.Card-Bot {
+  min-height: 45%;
+  padding: 0 15px 15px;
+}
+.Card-Bot h1 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  position: relative;
+  top: 165px;
+  background-color: #20202083;
+  color: var(--white);
+}
+
+.Card-Bot h1:hover {
+  color: var(--red);
+}
+
+.comic-card {
+  position: relative;
+  width: 220px;
+  height: 410px;
+  box-sizing: border-box;
+}
+
+.comic-card h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.image {
+  width: 220px;
+  height: auto;
+  box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px #aeaec0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.692);
+  overflow: hidden;
+  width: 0;
+  height: 330px;
+  transition: 0.4s ease;
+}
+
+.comic-card:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  height: 300px;
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text p {
+  line-height: 16px;
+}
+
+/* ----------------------- */
+/* -- character-section -- */
+/* ----------------------- */
+
+.character-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.character-description {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.return-btn {
+  margin-top: 100px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+/* --------------------- */
+/* -- characterHeader -- */
+/* --------------------- */
+
+.characterHeader {
+  color: var(--dark-grey);
+  width: 600px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.characterHeader img {
+  border-radius: 80% 50%;
+  margin-right: 20px;
+  height: 250px;
+}
+.characterHeader h1 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.characterHeader p {
+  font-weight: 400;
+}
+
+/* ------------------------ */
+
+.character-comics-wrap {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.character-comics-card {
+  background-color: rgba(245, 245, 245, 0.034);
+  width: 460px;
+  height: 260;
+  margin-bottom: 15px;
+  color: var(--dark-grey);
+  display: flex;
+  border-radius: 0 8px 8px 0;
+}
+
+.character-comics-text {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 17px;
+}
+.character-comics-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* --------------- */
+/* -- Favorites -- */
+/* --------------- */
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.favorites h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.favorites h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hero-fav,
+.comic-fav {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.hero-fav {
+  height: 270px;
+}
+
+.comic-fav {
+  height: 380px;
+}
+
+.hero-fav img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.hero-fav h3,
+.comic-fav h3 {
+  text-align: center;
+  padding: 5px;
+  line-height: 25px;
+}
+
+.comic-fav img {
+  width: 200px;
+}
+
+/* ------------- */
+/* -- Loading -- */
+/* ------------- */
+
+.loading {
+  margin: auto;
+  height: 100vh;
+}
+
+/* ---------------- */
+/* -- Pagination -- */
+/* ---------------- */
+
+.pagination-930 {
+  display: none;
+}
+
+.pagination,
+.pagination ul,
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.pagination li:hover {
+  cursor: pointer;
+}
+.pagination {
+  width: 90%;
+  margin: 50px auto;
+  margin-bottom: 100px;
+  font-size: 22px;
+}
+
+.pagination li {
+  margin: 0 2px;
+}
+
+.nav-btn {
+  color: var(--dark-grey);
+  width: 60px;
+  height: 40px;
+  background: #f0f0f3;
+  box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px #aeaec0;
+}
+
+.page-btn,
+.page-btn-red {
+  width: 45px;
+  height: 40px;
+  box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px #aeaec0;
+}
+.page-btn {
+  color: var(--dark-grey);
+}
+.page-btn-red {
+  color: var(--red);
+}
+
+.pagination li:hover {
+  opacity: 0.7;
+}
+
+/* ------------------ */
+/* ----- Footer ----- */
+/* ------------------ */
+
+.footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* ------------------------------ */
+/* ------- MEDIA QUERIES -------- */
+/* ------------------------------ */
+
+@media (max-width: 930px) {
+  .pagination {
+    display: none;
+  }
+  .pagination-930,
+  .pagination-930 ul,
+  .pagination-930 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .pagination-930 {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 22px;
+  }
+  .pagination-930 li {
+    margin: 0 2px;
+  }
+}
+
+@media (max-width: 414px) {
+  .header {
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .marvel-logo90,
+  .allcharacters,
+  .x-logo {
+    display: none;
+  }
+  .marvel-logo {
+    cursor: pointer;
+    display: flex;
+    width: 100vw;
+  }
+
+  /* ------------------------- */
+  .charac-btn,
+  .comics-btn,
+  .fav-btn {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .charac-btn,
+  .comics-btn,
+  .fav-btn {
+    height: 40px;
+    width: 95px;
+    top: 165px;
+    background: var(--red);
+    color: var(--white);
+  }
+  .charac-btn {
+    right: 242px;
+  }
+  .comics-btn {
+    right: 143px;
+  }
+  .fav-btn {
+    right: 44px;
+  }
+  /* ------------------ */
+  .search-form,
+  .search,
+  .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-form {
+    width: 100vw;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  .search,
+  .search-btn {
+    height: 35px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  .search {
+    min-width: 95%;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark-grey);
+  }
+  .search-btn {
+    min-width: 10%;
+    background-color: var(--red);
+    color: var(--white);
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  /* ----------------- */
+  .card-wrap {
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
